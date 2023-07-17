@@ -103,9 +103,9 @@ server {
 
         location / {
                 proxy_pass http://127.0.0.1:3000;
-                 #changer le port to 3001 si vous avez 
-                 #une autre app 
-                 #dans packages.json 
+                 #changer le port à 3001 si vous avez 
+                 #une autre app.
+                 #Dans packages.json 
                  #"start": "next start -p 3001",
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
